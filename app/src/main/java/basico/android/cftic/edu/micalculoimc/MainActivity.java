@@ -1,5 +1,6 @@
 package basico.android.cftic.edu.micalculoimc;
 
+import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -13,9 +14,18 @@ import java.util.Scanner;
 public class MainActivity extends AppCompatActivity {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void onCreate(Bundle saquito) {
+        super.onCreate(saquito);
         setContentView(R.layout.activity_main);
+
+        if  (saquito == null){
+            Log.d("MIAPP", "Es la primera vez que se ejecuta o no hay nada guardado");
+
+        } else{
+            Log.d("MIAPP", "Hay cosas guardadas");
+            boolean valor_guardado = saquito.getBoolean("GUARDADO");
+            Log.d("MIAPP", "Valor guardado" + valor_guardado);
+        }
 
     }
 
@@ -114,4 +124,18 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
+    @Override
+    public void onSaveInstanceState(Bundle saquito) {
+        super.onSaveInstanceState(saquito);
+
+        Log.d("MIAPP", "La actividad se va a recrear");
+        saquito.putBoolean("CARGADA", true);
+
+
+
+
+    }
+
+
 }
