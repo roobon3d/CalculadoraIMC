@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MiCalculoIMC</string>
+    <string name="introducir_altura">Input height</string>
+    <string name="introducir_peso">Input weight</string>
+    <string name="calcular_imc">BMI calculate</string>
+    <string name="su_imc">Your BMI :</string>
+    <string name="sobrepeso">OVERWEIGHT</string>
+    <string name="desnutrido">MALNOURISHED</string>
+    <string name="obeso">OBESE</string>
+    <string name="delgado">THIN</string>
+    <string name="ideal">IDEAL BMI</string>
+</resources>

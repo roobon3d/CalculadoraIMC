@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MiCalculoIMC</string>
+    <string name="introducir_altura">Introducir altura</string>
+    <string name="introducir_peso">Introducir peso</string>
+    <string name="calcular_imc">Calcular IMC</string>
+    <string name="su_imc">Su IMC :</string>
+    <string name="sobrepeso">SOBREPESO</string>
+    <string name="desnutrido">DESNUTRIDO</string>
+    <string name="obeso">OBESO</string>
+    <string name="ideal">IDEAL</string>
+    <string name="delgado">DELGADO</string>
+</resources>
